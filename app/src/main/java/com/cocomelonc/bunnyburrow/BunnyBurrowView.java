@@ -57,6 +57,7 @@ final class BunnyBurrowView extends View implements BunnyWorld.Listener {
     private final android.graphics.Typeface bold;
     private final SharedPreferences preferences;
     private final AudioEngine audio = new AudioEngine();
+    private final MusicEngine music;
     private final BunnyWorld world;
     private final List<Particle> particles = new ArrayList<>();
     private final Random random = new Random(0xB00B177L);
@@ -80,6 +81,7 @@ final class BunnyBurrowView extends View implements BunnyWorld.Listener {
 
     BunnyBurrowView(Context context) {
         super(context);
+        music = new MusicEngine(context);
         setFocusable(true);
         setFocusableInTouchMode(true);
         setClickable(true);
@@ -129,6 +131,7 @@ final class BunnyBurrowView extends View implements BunnyWorld.Listener {
         }
 
         BunnyWorld.State state = world.getState();
+        music.setPlaying(hostResumed && state == BunnyWorld.State.PLAYING);
         if (state != lastVisualState) {
             lastVisualState = state;
             overlayProgress = isOverlayState(state) ? 0f : 1f;
@@ -996,6 +999,7 @@ final class BunnyBurrowView extends View implements BunnyWorld.Listener {
 
     void onHostPause() {
         hostResumed = false;
+        music.setPlaying(false);
         drawingTunnel = false;
         lastFrameNanos = 0L;
         world.pause();
@@ -1009,6 +1013,7 @@ final class BunnyBurrowView extends View implements BunnyWorld.Listener {
 
     void close() {
         hostResumed = false;
+        music.close();
         audio.close();
     }
 

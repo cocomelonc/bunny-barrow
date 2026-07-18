@@ -49,7 +49,8 @@ adjacent tunnel cells through the production game rules.
 
 - Native Java and Android Canvas; no game engine or runtime dependencies.
 - Original procedural artwork; no downloaded tileset or image-license risk.
-- Procedural sounds; no bundled audio or codec dependency.
+- Original procedural effects and calm background music; no sampled audio
+  files or codec dependency.
 - One activity, one custom view, and a pure-Java gameplay core.
 - English and Russian bundled in every APK and AAB.
 - No Internet, advertising ID, analytics, or native `.so` libraries.
@@ -80,8 +81,9 @@ permissions and native libraries, and checks signature and 16 KB ZIP alignment.
 The debug APK was clean-installed and exercised on a Pixel 7 emulator running
 Android 16/API 36. Runtime checks covered launch, landscape scaling, drag-to-dig
 input, smooth hopping, carrot collection, tunnel backtracking, pause animation,
-Android Back, the `EN / RU` switch, and Cyrillic layout. The screenshots above
-come from that APK rather than a design mock-up.
+music playback/pause and Audio Focus release, Android Back, the `EN / RU`
+switch, and Cyrillic layout. The screenshots above come from that APK rather
+than a design mock-up.
 
 ## Build and verify
 
@@ -123,6 +125,7 @@ app/src/main/java/com/cocomelonc/bunnyburrow/
   BunnyWorld.java         testable tunnel and objective rules
   BurrowLevel.java        ten immutable 14×8 tilemaps and palettes
   AudioEngine.java        tiny procedural sound synthesizer
+  MusicEngine.java        calm original procedural background music
 app/src/test/             full-journey and reachability tests
 art/                      procedural-art licensing notes and screenshots
 third_party/nunito/       exact SIL OFL license for the bundled font
@@ -134,8 +137,9 @@ scripts/                  reproducible Android verification
 The app is intentionally offline and does not collect or transmit data. See
 [PRIVACY.md](PRIVACY.md).
 
-Project source and original procedural artwork are under the MIT License.
-Nunito remains under the SIL Open Font License 1.1; see
+Project source, original procedural artwork, sound effects, and music are under
+the MIT License; see [AUDIO.md](AUDIO.md). Nunito remains under the SIL Open
+Font License 1.1; see
 [`third_party/nunito/OFL.txt`](third_party/nunito/OFL.txt).
 
 Bunny Burrow was created by **cocomelonc**. See [AUTHORS.md](AUTHORS.md),
