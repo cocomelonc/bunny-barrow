@@ -29,8 +29,8 @@ final class AudioEngine {
     }
 
     void playCarrot(int number) {
-        float base = 523.25f * (1f + number * 0.1f);
-        play(new float[]{base, base * 1.25f, base * 1.5f}, 0.40f, 0.13f);
+        float base = 523.25f * (1f + number * 0.07f);
+        play(new float[]{base, base * 1.25f, base * 1.50f}, 0.34f, 0.11f);
     }
 
     void playLevelComplete() {
@@ -59,17 +59,17 @@ final class AudioEngine {
             double time = i / (double) SAMPLE_RATE;
             double progress = i / (double) sampleCount;
             double attack = Math.min(1.0, progress / 0.05);
-            double release = Math.pow(Math.max(0.0, 1.0 - progress), 2.6);
+            double release = Math.pow(Math.max(0.0, 1.0 - progress), 2.5);
             double value = 0.0;
             for (int note = 0; note < frequencies.length; note++) {
-                double stagger = note * 0.05;
+                double stagger = note * 0.052;
                 if (time >= stagger) {
                     double localTime = time - stagger;
                     value += Math.sin(Math.PI * 2.0 * frequencies[note] * localTime)
-                            + 0.16 * Math.sin(Math.PI * 4.0 * frequencies[note] * localTime);
+                            + 0.18 * Math.sin(Math.PI * 4.0 * frequencies[note] * localTime);
                 }
             }
-            value /= frequencies.length * 1.16;
+            value /= frequencies.length * 1.18;
             pcm[i] = (short) (Short.MAX_VALUE * volume * attack * release * value);
         }
 
@@ -88,8 +88,8 @@ final class AudioEngine {
                     .setBufferSizeInBytes(pcm.length * 2)
                     .setTransferMode(AudioTrack.MODE_STATIC)
                     .build();
-            if (track.getState() != AudioTrack.STATE_INITIALIZED
-                    || track.write(pcm, 0, pcm.length) < 0) {
+            int written = track.write(pcm, 0, pcm.length);
+            if (written != pcm.length || track.getState() != AudioTrack.STATE_INITIALIZED) {
                 return;
             }
             track.play();
