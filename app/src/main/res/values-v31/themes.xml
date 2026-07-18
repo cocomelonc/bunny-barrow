@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BunnyBurrow.Starting" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@color/burrow_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="android:windowSplashScreenBackground">@color/burrow_background</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/burrow_icon_background</item>
+    </style>
+</resources>

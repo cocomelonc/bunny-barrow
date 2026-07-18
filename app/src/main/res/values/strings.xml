@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bunny Burrow</string>
+    <string name="game_title">Bunny Burrow</string>
+    <string name="game_subtitle">A tiny tunnel, a sunny meadow</string>
+    <string name="touch_to_begin">Touch to begin</string>
+    <string name="draw_to_dig">Draw from the bunny to dig a tunnel</string>
+    <string name="find_carrots">Find three carrots, then reach the sunny exit</string>
+    <string name="paused">A quiet burrow pause</string>
+    <string name="touch_to_continue">Touch anywhere to continue</string>
+    <string name="level_complete">A basket full of carrots!</string>
+    <string name="journey_complete">Every burrow is bright</string>
+    <string name="journey_complete_subtitle">Ten little tunnels now lead to sunny meadows</string>
+    <string name="play_again">Touch to dig them again</string>
+    <string name="carrots_label">Carrots</string>
+    <string name="level_1">Soft Earth</string>
+    <string name="level_2">Little Roots</string>
+    <string name="level_3">Pebble Patch</string>
+    <string name="level_4">Minty Stream</string>
+    <string name="level_5">Carrot Corner</string>
+    <string name="level_6">Clover Burrow</string>
+    <string name="level_7">Twisty Tunnel</string>
+    <string name="level_8">Peach Soil</string>
+    <string name="level_9">Moonlit Burrow</string>
+    <string name="level_10">Sunny Meadow</string>
+    <string name="accessibility_game">Bunny Burrow. Draw through soft earth to guide the bunny. Find three carrots, then reach the sunny exit.</string>
+    <string name="accessibility_carrot_found">Carrot found</string>
+    <string name="accessibility_level_complete">Burrow complete</string>
+</resources>

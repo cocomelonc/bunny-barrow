@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Норка кролика</string>
+    <string name="game_title">Норка кролика</string>
+    <string name="game_subtitle">Маленький тоннель к солнечной поляне</string>
+    <string name="touch_to_begin">Коснись, чтобы начать</string>
+    <string name="draw_to_dig">Проведи от кролика и выкопай тоннель</string>
+    <string name="find_carrots">Найди три морковки и доберись до солнечного выхода</string>
+    <string name="paused">Тихая пауза в норке</string>
+    <string name="touch_to_continue">Коснись в любом месте, чтобы продолжить</string>
+    <string name="level_complete">Полная корзинка моркови!</string>
+    <string name="journey_complete">Все норки стали светлыми</string>
+    <string name="journey_complete_subtitle">Десять маленьких тоннелей ведут к солнечным полянам</string>
+    <string name="play_again">Коснись, чтобы выкопать их снова</string>
+    <string name="carrots_label">Морковки</string>
+    <string name="level_1">Мягкая земля</string>
+    <string name="level_2">Маленькие корни</string>
+    <string name="level_3">Поляна камешков</string>
+    <string name="level_4">Мятный ручеёк</string>
+    <string name="level_5">Морковный уголок</string>
+    <string name="level_6">Клеверная норка</string>
+    <string name="level_7">Извилистый тоннель</string>
+    <string name="level_8">Персиковая земля</string>
+    <string name="level_9">Лунная норка</string>
+    <string name="level_10">Солнечная поляна</string>
+    <string name="accessibility_game">Норка кролика. Проведи дорожку через мягкую землю. Найди три морковки и доберись до солнечного выхода.</string>
+    <string name="accessibility_carrot_found">Морковка найдена</string>
+    <string name="accessibility_level_complete">Норка пройдена</string>
+</resources>
