@@ -30,16 +30,16 @@ Cyrillic use the same bundled Nunito typeface.
 
 ## Ten burrows
 
-- **Soft Earth** — a spacious introduction to drawing tunnels.
-- **Little Roots** — the first roots and simple detours.
-- **Pebble Patch** — small stone clusters break up straight routes.
-- **Minty Stream** — underground water creates two gentle passages.
-- **Carrot Corner** — carrots sit around long root rows.
-- **Clover Burrow** — branching clover roots encourage exploration.
-- **Twisty Tunnel** — a readable compact root maze.
-- **Peach Soil** — warm soil with orchard-like stone lines.
-- **Moonlit Burrow** — pools and a quiet evening palette.
-- **Sunny Meadow** — a final mix of roots, stones, and water.
+- **Soft Earth** - a spacious introduction to drawing tunnels.
+- **Little Roots** - the first roots and simple detours.
+- **Pebble Patch** - small stone clusters break up straight routes.
+- **Minty Stream** - underground water creates two gentle passages.
+- **Carrot Corner** - carrots sit around long root rows.
+- **Clover Burrow** - branching clover roots encourage exploration.
+- **Twisty Tunnel** - a readable compact root maze.
+- **Peach Soil** - warm soil with orchard-like stone lines.
+- **Moonlit Burrow** - pools and a quiet evening palette.
+- **Sunny Meadow** - a final mix of roots, stones, and water.
 
 Every level is a real 14×8 tilemap. Automated tests prove that all carrots and
 the exit are reachable, then complete all ten levels by drawing only valid
@@ -149,7 +149,7 @@ Bunny Burrow was created by **cocomelonc**. See [AUTHORS.md](AUTHORS.md),
 
 ## Русский
 
-Bunny Burrow — маленькая спокойная Android-игра. Проведите пальцем от кролика,
+Bunny Burrow - маленькая спокойная Android-игра. Проведите пальцем от кролика,
 выкопайте тоннель, найдите три морковки и доберитесь до солнечного выхода.
 Здесь нет рекламы, регистрации, аналитики, сетевого доступа, таймеров и экрана
 проигрыша. Язык переключается кнопкой `EN / RU`; латиница и кириллица используют

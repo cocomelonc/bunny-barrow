@@ -2,7 +2,7 @@
 
 ## Original author and copyright holder
 
-**cocomelonc** (Zhassulan Zhussupov) — concept, game design, source code,
+**cocomelonc** (Zhassulan Zhussupov) - concept, game design, source code,
 procedural artwork, English/Russian localization, and original project
 direction.
 
